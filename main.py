@@ -49,7 +49,7 @@ def hilfe():
 
 def schluessel():
     if key == 'R2':
-        print("You found a key and take it.")
+        print("You found a key and took it.")
         return 'Player'
 
 current_room = 'R0'
@@ -78,7 +78,7 @@ while (current_room is not None):
         current_room = compass[command][current_room]
         if current_room == 'R2' and key == 'R2':
             key = 'Player'  # schluessel()
-            print("You found a key and take it.")
+            print("You found a key and took it.")
         elif current_room == 'R0' and key == 'Player':
             key = 'R0'
             print(text_r5freigeben)

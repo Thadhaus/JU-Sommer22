@@ -6,8 +6,12 @@ import random
 import time
 random.seed(time.time())
 
-print (f"Dein Zufallswert ist {random.randint(7,13)}")
-
+zufallswert = random.randint(7,13)
+print (f"Your lucky number of today is {zufallswert}\n")
+if zufallswert == 12:
+  print(f"Today you are very lucky.")
+  print (f"You have been selected from {random.randint(1000234,2345678)} participants to be the adventurer of the week.\n")
+  
 north = {
     'R0': None,
     'R1': None,

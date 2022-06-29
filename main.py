@@ -2,6 +2,12 @@
 # Scary cave game -- Original Version CC BY-NC-SA 3.0
 # Diese modifizierte Version (C) 2022 Roland Härter r.haerter@wut.de
 #
+import random
+import time
+random.seed(time.time())
+
+print (f"Dein Zufallswert ist {random.randint(7,13)}")
+
 north = {
     'R0': None,
     'R1': None,

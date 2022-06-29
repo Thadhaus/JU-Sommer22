@@ -106,3 +106,10 @@ while (current_room is not None):
             current_room = None
     else:
         print('There is no path in that direction. ', end='')
+
+import os
+os.system("clear")
+if command != 'quit':
+  print("\n\n\n\tCongratulation. You won the game!!")
+
+# guteSanddorn Kampflogik

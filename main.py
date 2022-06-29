@@ -41,6 +41,11 @@ description = {
     'R5': 'The secret room, you found it.'
 }
 
+r5freigeben = '''
+The north wall shivers and bends. 
+Suddenly there is a door in the north wall.
+Totally surprised you drop the key.
+'''
 
 def hilfe():
     print('You may use the following commands: ', end='')
@@ -76,13 +81,7 @@ while (current_room is not None):
         if current_room == 'R2':
             key = 'Player'  # schluessel()
         elif current_room == 'R0' and key == 'Player':
-            print(
-                '''
-The north wall shivers and bends. 
-Suddenly there is a door in the north wall.
-Totally surprised you drop the key.
-'''
-            )
+            print(r5freigeben)
             key = 'R0'
             north['R0'] = 'R5'
         elif current_room == final_room:

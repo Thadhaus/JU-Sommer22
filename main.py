@@ -1,8 +1,7 @@
 # https://www.helloworld.cc - Heft 1 - Seite 52
 # Scary cave game -- Original Version CC BY-NC-SA 3.0
 # Diese modifizierte Version (C) 2022 Roland Härter r.haerter@wut.de
-# TEST
-
+#
 north = {
     'R0': None,
     'R1': None,

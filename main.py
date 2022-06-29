@@ -85,6 +85,7 @@ while (current_room is not None):
     elif command == 'quit':
         current_room = None  # Ohne Schmuck und ohne Sicherheitsfrage
     elif compass[command][current_room] is not None:
+        previous_room = current_room
         current_room = compass[command][current_room]
         if current_room == 'R2' and key == 'R2':
             key = 'Player'  # schluessel()
@@ -93,6 +94,12 @@ while (current_room is not None):
             key = 'R0'
             print(text_r5freigeben)
             north['R0'] = 'R5'
+        elif current_room == 'R5':
+            if key == 'R5':
+                print("Mit dem Schlüssel kommst du rein")
+            else:
+                print("Ohne Schlüssel kommst du nicht durch die Tür")
+                current_room = previous_room
         elif current_room == final_room:
             print(description[current_room])
             print('You found the final room. Game Over.')

@@ -91,7 +91,3 @@ Totally surprised you drop the key.
             current_room = None
     else:
         print('There is no path in that direction. ', end='')
-
-text = ' eins zwei\n drei \
-vier\t\tfuenf sechs'
-print(text)

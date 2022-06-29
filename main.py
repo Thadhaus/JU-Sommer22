@@ -47,7 +47,6 @@ def hilfe():
         print(f"'{befehl}' ", end='')
     print('')
 
-
 def schluessel():
     if key == 'R2':
         print("You found a key and take it.")

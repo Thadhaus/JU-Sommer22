@@ -10,4 +10,4 @@ Its main purpose is to show the use of [github](https://github.com) with
 [repl.it](https://replit.com).
 
 
-Remark:  This is not the newest version available. In other versions some bug have been fixed. There is also a german translation available.
+Remark:  This is not the newest version available. In other versions some bugs have been fixed. There is also a german translation available.
